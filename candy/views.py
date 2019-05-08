@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from candy.forms.candy_form import CandyCreateForm, CandyUpdateForm
 from candy.models import Candy, CandyImage
@@ -5,6 +6,16 @@ from candy.models import Candy, CandyImage
 
 # Create your views here.
 def index(request):
+    if 'search_filter' in request.GET:
+        search_filter = request.GET['search_filter']
+        candies = [ {
+            'id': x.id,
+            'name': x.name,
+            'description': x.description,
+            'firstImage': x.candyimage_set.first().image
+        } for x in  Candy.objects.filter(name__icontains=search_filter)]
+        # candies = list(Candy.objects.filter(name__icontains=search_filter).values())
+        return JsonResponse({'data': candies})
     context = {'candies': Candy.objects.all().order_by('name')}
     return render(request, 'candy/index.html', context)
 
