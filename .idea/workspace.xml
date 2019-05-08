@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b4550a-3a2b-4f40-a4c5-3419fb8662c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/candy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/candy/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/candies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/candy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/candy/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +63,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candy/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -68,6 +71,33 @@
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/candies.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/candy/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -132,6 +162,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -159,8 +190,6 @@
         <option value="$PROJECT_DIR$/candy_queen/settings.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5283b0f8-1584-480a-8a34-a70863f833d1/console.sql" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/templates/candy/index.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/manufacturer/single_manufacturer" />
         <option value="$PROJECT_DIR$/manufacturer/views.py" />
         <option value="$PROJECT_DIR$/candy_queen/urls.py" />
@@ -176,19 +205,15 @@
         <option value="$PROJECT_DIR$/templates/candy/candy_details.html" />
         <option value="$PROJECT_DIR$/candy/urls.py" />
         <option value="$PROJECT_DIR$/candy/views.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/candy/index.html" />
+        <option value="$PROJECT_DIR$/static/js/candies.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="445" />
-    <option name="y" value="100" />
+    <option name="y" value="48" />
     <option name="width" value="1385" />
     <option name="height" value="983" />
   </component>
@@ -209,6 +234,17 @@
               <item name="candy_queen" type="b2602c69:ProjectViewProjectNode" />
               <item name="candy_queen" type="462c0819:PsiDirectoryNode" />
               <item name="candy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="candy_queen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="candy_queen" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="candy_queen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="candy_queen" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="candy_queen" type="b2602c69:ProjectViewProjectNode" />
@@ -321,12 +357,12 @@
       <workItem from="1556996789544" duration="22094000" />
       <workItem from="1557155830615" duration="13770000" />
       <workItem from="1557266902380" duration="17153000" />
-      <workItem from="1557332351077" duration="11432000" />
+      <workItem from="1557332351077" duration="14171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64449000" />
+    <option name="totallyTimeSpent" value="67188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,7 +381,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18350849" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" sideWeight="0.4995958" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4987874" weight="0.36524823" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4987874" visible="true" weight="0.36524823" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5012126" side_tool="true" weight="0.39539006" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32978722" />
@@ -489,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/manufacturer/single_manufacturer" />
     <entry file="file://$PROJECT_DIR$/templates/manufacturer/single_manufacturer.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -527,13 +556,6 @@
           <filtering enabled="true">
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/candy/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -634,6 +656,27 @@
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/candy/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/candies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
         </state>
       </provider>
     </entry>
