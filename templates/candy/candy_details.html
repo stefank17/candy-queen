@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{{ candy.name }}</h1>
+    <p>{{ candy.description }}</p>
+    <p>{{ candy.price }}</p>
+    <p>Manufacturer: {{ candy.manufacturer.name }}</p>
+    {% for candy_image in candy.candyimage_set.all %}
+        <img src="{{ candy_image.image }}" class="candy-img" />
+    {% endfor %}
+
+    <a href="{% url 'delete_candy' candy.id%}" class="block-btn btn-primary">Delete candy</a>
+{% endblock %}
