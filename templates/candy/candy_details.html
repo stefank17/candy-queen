@@ -8,5 +8,6 @@
         <img src="{{ candy_image.image }}" class="candy-img" />
     {% endfor %}
 
-    <a href="{% url 'delete_candy' candy.id%}" class="block-btn btn-primary">Delete candy</a>
+    <a href="{% url 'delete_candy' candy.id %}" class="block btn btn-primary">Delete candy</a>
+    <a href="{% url 'update_candy' candy.id %}" class="block btn btn-primary">Update candy</a>
 {% endblock %}

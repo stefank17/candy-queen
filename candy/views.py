@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from candy.forms.candy_form import CandyCreateForm
+from candy.forms.candy_form import CandyCreateForm, CandyUpdateForm
 from candy.models import Candy, CandyImage
 
 
@@ -37,10 +37,12 @@ def delete_candy(request, id):
 def update_candy(request, id):
     instance = get_object_or_404(Candy, pk=id)
     if request.method == 'POST':
-        print(1)
+        form = CandyUpdateForm(data=request.POST, instance=instance)
+        if form.is_valid():
+            form.save()
+            return redirect('candy_details', id=id)
     else:
         form = CandyUpdateForm(instance=instance)
-        print(2)
     return render(request, 'candy/update_candy.html', {
         'form': form,
         'id': id
