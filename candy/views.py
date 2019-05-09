@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from candy.forms.candy_form import CandyCreateForm, CandyUpdateForm
@@ -18,12 +19,12 @@ def index(request):
         return JsonResponse({'data': candies})
     context = {'candies': Candy.objects.all().order_by('name')}
     return render(request, 'candy/index.html', context)
-
+@login_required
 def get_candy_by_id(request, id):
     return render(request, 'candy/candy_details.html', {
         'candy': get_object_or_404(Candy, pk=id)
     })
-
+@login_required
 def create_candy(request):
     if request.method == 'POST':
         form = CandyCreateForm(data=request.POST)
@@ -39,12 +40,14 @@ def create_candy(request):
         'form': form
     })
 
+@login_required
 def delete_candy(request, id):
     candy = get_object_or_404(Candy, pk=id)
     candy.delete()
     return redirect('candy-index')
 
 
+@login_required
 def update_candy(request, id):
     instance = get_object_or_404(Candy, pk=id)
     if request.method == 'POST':

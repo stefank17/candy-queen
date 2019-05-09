@@ -8,11 +8,10 @@
         <div class="'input-group-btn">
             <button type="button" id="search-btn" class="btn btn-default">Search</button>
         </div>
-    </div>
 
-    <div class="candies">
-        {% for candy in candies %}
-            {% include 'candy/single_candy.html' with candy=candy %}
-        {% endfor %}
-    </div>
+        <div class="candies">
+            {% for candy in candies %}
+                {% include 'candy/single_candy.html' with candy=candy %}
+            {% endfor %}
+        </div>
 {% endblock %}
